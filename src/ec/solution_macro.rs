@@ -10,10 +10,7 @@ pub fn read_input_file(quest: u8, part: u8) -> String {
         .join("notes")
         .join(format!("{:02}-{}.txt", quest, part));
 
-    match fs::read_to_string(&filepath) {
-        Ok(content) => content,
-        Err(_) => String::new(),
-    }
+    fs::read_to_string(&filepath).unwrap_or_default()
 }
 
 /// Helper function that reads an example file to a string.

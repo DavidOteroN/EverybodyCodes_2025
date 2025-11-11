@@ -1,6 +1,6 @@
 /target
 Cargo.lock
-inputs/examples/*
+# inputs/examples/*
 inputs/notes/*
 !inputs/examples/.gitkeep
 !inputs/notes/.gitkeep

@@ -44,4 +44,5 @@ src
 - [Quest 2](https://everybody.codes/event/2025/quests/2): [solution](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_02/src/main.rs) (older repo before I started using the template. To be ported here).
 - [Quest 3](https://everybody.codes/event/2025/quests/3): [solution](src/bin/quest_03.rs).
 - [Quest 4](https://everybody.codes/event/2025/quests/4): [solution](src/bin/quest_04.rs).
-
+- [Quest 5](https://everybody.codes/event/2025/quests/5): [solution](src/bin/quest_05.rs).
+  - Custom type `Fishbone` implemented in [`src/utils/fishbone.rs`](src/utils/fishbone.rs)

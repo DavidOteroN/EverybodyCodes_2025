@@ -1,4 +1,5 @@
 pub mod ec;
+pub mod utils;
 
 use std::fs;
 use std::path::PathBuf;

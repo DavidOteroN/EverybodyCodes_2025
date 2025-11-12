@@ -60,12 +60,12 @@ pub fn part_two(notes: &str) -> Option<String> {
 pub fn part_three(notes: &str) -> Option<String> {
     let gears = parse_input(notes);
     const TURNS_FIRST: u32 = 100;
-    let mut ratio = gears
-        .iter()
-        .fold(1f64, |acc, g| (g.1 as f64) / (g.0 as f64));
-    ratio *= gears[gears.len() - 1].0 as f64 / gears[0].1 as f64;
+    let ratio = gears[1..gears.len() - 1].iter().fold(
+        (gears[0].1 as f64) / (gears[gears.len() - 1].0 as f64),
+        |acc, g| acc * (g.1 as f64) / (g.0 as f64),
+    );
 
-    Some(format!("{}", (ratio * (TURNS_FIRST as f64)) as u32))
+    Some(format!("{}", (ratio * (TURNS_FIRST as f64)).floor() as u64))
 }
 
 #[cfg(test)]

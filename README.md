@@ -34,6 +34,8 @@ src
   |   | ...
   | ec
   |   | ...
+| | utils
+| |   | ...
   | lib.rs
   | main.rs
 ```
@@ -46,3 +48,4 @@ src
 - [Quest 4](https://everybody.codes/event/2025/quests/4): [solution](src/bin/quest_04.rs).
 - [Quest 5](https://everybody.codes/event/2025/quests/5): [solution](src/bin/quest_05.rs).
   - Custom type `Fishbone` implemented in [`src/utils/fishbone.rs`](src/utils/fishbone.rs)
+- [Quest 6](https://everybody.codes/event/2025/quests/6): [solution](src/bin/quest_06.rs).

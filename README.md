@@ -49,3 +49,5 @@ src
 - [Quest 5](https://everybody.codes/event/2025/quests/5): [solution](src/bin/quest_05.rs).
   - Custom type `Fishbone` implemented in [`src/utils/fishbone.rs`](src/utils/fishbone.rs)
 - [Quest 6](https://everybody.codes/event/2025/quests/6): [solution](src/bin/quest_06.rs).
+  - NOTE: part three solution heavily inspired by [this one](https://everybody.codes/event/2025/quests/6).
+- [Quest 7](https://everybody.codes/event/2025/quests/7): [solution](src/bin/quest_07.rs).

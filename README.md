@@ -42,12 +42,13 @@ src
 
 ## Quests and solutions
 
-- [Quest 1](https://everybody.codes/event/2025/quests/1): [solution](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_01/src/main.rs) (older repo before I started using the template. To be ported here).
-- [Quest 2](https://everybody.codes/event/2025/quests/2): [solution](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_02/src/main.rs) (older repo before I started using the template. To be ported here).
-- [Quest 3](https://everybody.codes/event/2025/quests/3): [solution](src/bin/quest_03.rs).
-- [Quest 4](https://everybody.codes/event/2025/quests/4): [solution](src/bin/quest_04.rs).
-- [Quest 5](https://everybody.codes/event/2025/quests/5): [solution](src/bin/quest_05.rs).
-  - Custom type `Fishbone` implemented in [`src/utils/fishbone.rs`](src/utils/fishbone.rs)
-- [Quest 6](https://everybody.codes/event/2025/quests/6): [solution](src/bin/quest_06.rs).
-  - NOTE: part three solution heavily inspired by [this one](https://everybody.codes/event/2025/quests/6).
-- [Quest 7](https://everybody.codes/event/2025/quests/7): [solution](src/bin/quest_07.rs).
+| Quest | Solution | Notes |
+| --- | --- | --- |
+| [Whispers in the shell](https://everybody.codes/event/2025/quests/1) | [Solution](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_01/src/main.rs) | To be ported to this repo at some point. |
+| [From complex to clarity](https://everybody.codes/event/2025/quests/2) | [quest_01.rs](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_01/src/main.rs) | To be ported to this repo at some point. |
+| [The deepest fit](https://everybody.codes/event/2025/quests/3) | [quest_01.rs](/src/bin/quest_03.rs) | |
+| [Teeth of the wind](https://everybody.codes/event/2025/quests/3) | [quest_03.rs](/src/bin/quest_03.rs) | |
+| [Fishbone order](https://everybody.codes/event/2025/quests/4) | [quest_04.rs](/src/bin/quest_04.rs) | |
+| [Mentorship matrix](https://everybody.codes/event/2025/quests/6) | [quest_06.rs](/src/bin/quest_06.rs) | |
+| [Namegraph](https://everybody.codes/event/2025/quests/7) | [quest_07.rs](/src/bin/quest_07.rs) | |
+| [The art of connection](https://everybody.codes/event/2025/quests/8) | [quest_08.rs](/src/bin/quest_08.rs) | |

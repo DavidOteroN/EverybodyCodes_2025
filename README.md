@@ -52,3 +52,4 @@ src
 | [Mentorship matrix](https://everybody.codes/event/2025/quests/6) | [quest_06.rs](/src/bin/quest_06.rs) | |
 | [Namegraph](https://everybody.codes/event/2025/quests/7) | [quest_07.rs](/src/bin/quest_07.rs) | |
 | [The art of connection](https://everybody.codes/event/2025/quests/8) | [quest_08.rs](/src/bin/quest_08.rs) | |
+| [Encoded in the scales](https://everybody.codes/event/2025/quests/9) | [quest_09.rs](/src/bin/quest_09.rs) | |

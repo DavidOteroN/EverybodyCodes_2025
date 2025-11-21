@@ -44,12 +44,14 @@ src
 
 | Quest | Solution | Notes |
 | --- | --- | --- |
-| [Whispers in the shell](https://everybody.codes/event/2025/quests/1) | [Solution](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_01/src/main.rs) | To be ported to this repo at some point. |
-| [From complex to clarity](https://everybody.codes/event/2025/quests/2) | [quest_01.rs](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_01/src/main.rs) | To be ported to this repo at some point. |
-| [The deepest fit](https://everybody.codes/event/2025/quests/3) | [quest_01.rs](/src/bin/quest_03.rs) | |
-| [Teeth of the wind](https://everybody.codes/event/2025/quests/3) | [quest_03.rs](/src/bin/quest_03.rs) | |
-| [Fishbone order](https://everybody.codes/event/2025/quests/4) | [quest_04.rs](/src/bin/quest_04.rs) | |
-| [Mentorship matrix](https://everybody.codes/event/2025/quests/6) | [quest_06.rs](/src/bin/quest_06.rs) | |
-| [Namegraph](https://everybody.codes/event/2025/quests/7) | [quest_07.rs](/src/bin/quest_07.rs) | |
-| [The art of connection](https://everybody.codes/event/2025/quests/8) | [quest_08.rs](/src/bin/quest_08.rs) | |
-| [Encoded in the scales](https://everybody.codes/event/2025/quests/9) | [quest_09.rs](/src/bin/quest_09.rs) | |
+| 1. [Whispers in the shell](https://everybody.codes/event/2025/quests/1) | [Solution](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_01/src/main.rs) | To be ported to this repo at some point. |
+| 2. [From complex to clarity](https://everybody.codes/event/2025/quests/2) | [quest_01.rs](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_01/src/main.rs) | To be ported to this repo at some point. |
+| 3. [The deepest fit](https://everybody.codes/event/2025/quests/3) | [quest_01.rs](/src/bin/quest_03.rs) | |
+| 4. [Teeth of the wind](https://everybody.codes/event/2025/quests/3) | [quest_03.rs](/src/bin/quest_03.rs) | |
+| 5. [Fishbone order](https://everybody.codes/event/2025/quests/4) | [quest_04.rs](/src/bin/quest_04.rs) | |
+| 6. [Mentorship matrix](https://everybody.codes/event/2025/quests/6) | [quest_06.rs](/src/bin/quest_06.rs) | |
+| 7. [Namegraph](https://everybody.codes/event/2025/quests/7) | [quest_07.rs](/src/bin/quest_07.rs) | |
+| 8. [The art of connection](https://everybody.codes/event/2025/quests/8) | [quest_08.rs](/src/bin/quest_08.rs) | |
+| 9. [Encoded in the scales](https://everybody.codes/event/2025/quests/9) | [quest_09.rs](/src/bin/quest_09.rs) | |
+| 10. [Feast on the board](https://everybody.codes/event/2025/quests/10) | WIP | |
+| 11. [The scout duck protocol](https://everybody.codes/event/2025/quests/11) | [quest_11.rs](/src/bin/quest_11.rs) | |

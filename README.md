@@ -53,5 +53,5 @@ src
 | 7. [Namegraph](https://everybody.codes/event/2025/quests/7) | [quest_07.rs](/src/bin/quest_07.rs) | |
 | 8. [The art of connection](https://everybody.codes/event/2025/quests/8) | [quest_08.rs](/src/bin/quest_08.rs) | |
 | 9. [Encoded in the scales](https://everybody.codes/event/2025/quests/9) | [quest_09.rs](/src/bin/quest_09.rs) | |
-| 10. [Feast on the board](https://everybody.codes/event/2025/quests/10) | WIP | |
+| 10. [Feast on the board](https://everybody.codes/event/2025/quests/10) | [quest_10.rs](src/bin/quest_10.rs) | WIP, still missing part 3. |
 | 11. [The scout duck protocol](https://everybody.codes/event/2025/quests/11) | [quest_11.rs](/src/bin/quest_11.rs) | |

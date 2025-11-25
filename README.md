@@ -56,3 +56,4 @@ src
 | 10. [Feast on the board](https://everybody.codes/event/2025/quests/10) | [quest_10.rs](src/bin/quest_10.rs) | WIP, still missing part 3. |
 | 11. [The scout duck protocol](https://everybody.codes/event/2025/quests/11) | [quest_11.rs](/src/bin/quest_11.rs) | |
 | 12. [One spark to burn them all](https://everybody.codes/event/2025/quests/12) | [quest_11.rs](/src/bin/quest_12.rs) | Part 3 was quite a tough one. My solution takes almost 10s on my machine. Surely there are optimizations to be found. |
+| 13. [Unlocking the mountain](https://everybody.codes/event/2025/quests/13) | [quest_13.rs](/src/bin/quest_13.rs) | |

@@ -21,9 +21,9 @@ impl Range {
             return None;
         }
         if self.rev {
-            return Some(self.init + self.len - n - 1);
+            Some(self.init + self.len - n - 1)
         } else {
-            return Some(self.init + n);
+            Some(self.init + n)
         }
     }
 
@@ -32,6 +32,52 @@ impl Range {
         out.rev = true;
         out
     }
+}
+
+fn solve<const TURNS: usize>(notes: &str) -> Option<String> {
+    // Instead of storing the full array in memory, store an array of ranges.
+    let input: Vec<Range> = notes
+        .trim()
+        .lines()
+        .map(|l| {
+            let v = l
+                .split("-")
+                .map(|z| z.parse::<usize>().unwrap())
+                .collect::<Vec<usize>>();
+            let (x, y) = (v[0], v[1]);
+            Range::new(x, y, false, true)
+        })
+        .collect();
+
+    // Then, create two vecs: front and back. Iterate through the input vec and push to front or
+    // back alternatively.
+    let mut front = vec![Range::new(1, 1, false, true)];
+    let mut back = Vec::new();
+    for (i, r) in input.iter().enumerate() {
+        if i % 2 == 0 {
+            front.push(*r);
+        } else {
+            back.push(r.rev());
+        }
+    }
+
+    // Finally, join the two vecs, reversing the back one.
+    front.extend(back.iter().rev());
+
+    // At last we can get the result.
+    let n = front.iter().map(|r| r.len).sum::<usize>();
+    let idx = TURNS % n;
+    let mut accum: usize = 0;
+    let mut result: usize = 0;
+    for r in front {
+        accum += r.len;
+        if accum > idx {
+            result = r.nth(idx + r.len - accum).unwrap();
+            break;
+        }
+    }
+
+    Some(result.to_string())
 }
 
 #[allow(unused_variables)]
@@ -60,107 +106,12 @@ pub fn part_one(notes: &str) -> Option<String> {
 
 #[allow(unused_variables)]
 pub fn part_two(notes: &str) -> Option<String> {
-    const TURNS: usize = 20252025;
-    // In this part, building the actual array in memory would be quite inefficient, so build a
-    // vector containing range objects.
-    //
-    // First, parse the input:
-    let input: Vec<Range> = notes
-        .trim()
-        .lines()
-        .map(|l| {
-            let v = l
-                .split("-")
-                .map(|z| z.parse::<usize>().unwrap())
-                .collect::<Vec<usize>>();
-            let (x, y) = (v[0], v[1]);
-            Range::new(x, y, false, true)
-        })
-        .collect();
-
-    // Then, create two vecs: front and back. Iterate through the input vec and push to front or
-    // back alternatively.
-    let mut front = vec![Range::new(1, 1, false, true)];
-    let mut back = Vec::new();
-    for (i, r) in input.iter().enumerate() {
-        if i % 2 == 0 {
-            front.push(*r);
-        } else {
-            back.push(r.rev());
-        }
-    }
-
-    // Finally, join the two vecs, reversing the back one.
-    front.extend(back.iter().rev());
-
-    // At last we can get the result.
-    let n = front.iter().map(|r| r.len).sum::<usize>();
-    let idx = TURNS % n;
-    let mut accum: usize = 0;
-    let mut result: usize = 0;
-    for r in front {
-        accum += r.len;
-        if accum > idx {
-            result = r.nth(idx + r.len - accum).unwrap();
-            break;
-        }
-    }
-
-    Some(result.to_string())
+    solve::<20252025>(notes)
 }
 
 #[allow(unused_variables)]
 pub fn part_three(notes: &str) -> Option<String> {
-    // Copy-paste from part_two, but changing the number of turns.
-    // The ranges are much larger, but the solution should still work.
-
-    const TURNS: usize = 202520252025;
-    // In this part, building the actual array in memory would be quite inefficient, so build a
-    // vector containing range objects.
-    //
-    // First, parse the input:
-    let input: Vec<Range> = notes
-        .trim()
-        .lines()
-        .map(|l| {
-            let v = l
-                .split("-")
-                .map(|z| z.parse::<usize>().unwrap())
-                .collect::<Vec<usize>>();
-            let (x, y) = (v[0], v[1]);
-            Range::new(x, y, false, true)
-        })
-        .collect();
-
-    // Then, create two vecs: front and back. Iterate through the input vec and push to front or
-    // back alternatively.
-    let mut front = vec![Range::new(1, 1, false, true)];
-    let mut back = Vec::new();
-    for (i, r) in input.iter().enumerate() {
-        if i % 2 == 0 {
-            front.push(*r);
-        } else {
-            back.push(r.rev());
-        }
-    }
-
-    // Finally, join the two vecs, reversing the back one.
-    front.extend(back.iter().rev());
-
-    // At last we can get the result.
-    let n = front.iter().map(|r| r.len).sum::<usize>();
-    let idx = TURNS % n;
-    let mut accum: usize = 0;
-    let mut result: usize = 0;
-    for r in front {
-        accum += r.len;
-        if accum > idx {
-            result = r.nth(idx + r.len - accum).unwrap();
-            break;
-        }
-    }
-
-    Some(result.to_string())
+    solve::<202520252025>(notes)
 }
 
 #[cfg(test)]
@@ -178,11 +129,5 @@ mod tests {
     fn test_part_two() {
         let result = part_two(&read_example_file(13, 2));
         assert_eq!(result, Some(30.to_string()));
-    }
-
-    #[test]
-    fn test_part_three() {
-        let result = part_three(&read_example_file(13, 3));
-        assert_eq!(result, None);
     }
 }

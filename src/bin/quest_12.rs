@@ -21,7 +21,7 @@ fn burn_barrels(
     burnt: &HashSet<(usize, usize)>,
     init: Vec<(usize, usize)>,
 ) -> HashSet<(usize, usize)> {
-    // Create a processing queue. This will be first come, first served.
+    // Create a processing queue. This will be last come, first served.
     let mut queue = init.clone();
     let mut ignited = burnt.clone();
 
@@ -68,7 +68,6 @@ fn greedy_search(
 }
 
 #[allow(unused_variables)]
-#[allow(clippy::needless_range_loop)] // this check doesn't work all that well.
 pub fn part_one(notes: &str) -> Option<String> {
     let barrels = parse_input(notes);
     // The starting state is:
@@ -81,7 +80,6 @@ pub fn part_one(notes: &str) -> Option<String> {
 }
 
 #[allow(unused_variables)]
-#[allow(clippy::needless_range_loop)] // this check doesn't work all that well.
 pub fn part_two(notes: &str) -> Option<String> {
     // Exactly like part one, but this time, on top of igniting the first barrel, the one on the
     // opposite corner is also ignited.
@@ -101,7 +99,6 @@ pub fn part_two(notes: &str) -> Option<String> {
 }
 
 #[allow(unused_variables)]
-#[allow(clippy::needless_range_loop)] // this check doesn't work all that well.
 pub fn part_three(notes: &str) -> Option<String> {
     // Find three fireballs shuch that:
     // - The first one destroys as many barrels as possible.

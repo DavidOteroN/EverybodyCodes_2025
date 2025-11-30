@@ -9,7 +9,10 @@ use std::path::PathBuf;
 type Aes256CbcDec = Decryptor<Aes256>;
 
 const BASE_URL: &str = "https://everybody.codes";
-const CDN_URL: &str = "https://everybody-codes.b-cdn.net";
+
+// Due to CDN issues, it was advised to not use the CDN URL anymore.
+// See https://www.reddit.com/r/everybodycodes/comments/1p75qfr/2025_please_update_your_tools/
+const CDN_URL: &str = "https://everybody.codes";
 
 #[derive(Debug)]
 pub enum ClientError {

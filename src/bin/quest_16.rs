@@ -52,14 +52,8 @@ pub fn part_three(notes: &str) -> Option<String> {
     // the real solution (solution must be >= than n_cols).
     //
     // Iterate increasing n_cols until a solution is reached (no need for binary search).
-    loop {
-        if compute_blocks(spell.iter().copied(), n_cols) > N {
-            // We've gone one steop too far.
-            n_cols -= 1;
-            break;
-        } else {
-            n_cols += 1;
-        }
+    while compute_blocks(spell.iter().copied(), n_cols + 1) <= N {
+        n_cols += 1;
     }
 
     Some(n_cols.to_string())

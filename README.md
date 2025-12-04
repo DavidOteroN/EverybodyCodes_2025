@@ -58,3 +58,5 @@ src
 | 12. [One spark to burn them all](https://everybody.codes/event/2025/quests/12) | [quest_11.rs](/src/bin/quest_12.rs) | Part 3 was quite a tough one. My solution takes almost 10s on my machine. Surely there are optimizations to be found. |
 | 13. [Unlocking the mountain](https://everybody.codes/event/2025/quests/13) | [quest_13.rs](/src/bin/quest_13.rs) | |
 | 14. [Game of light](https://everybody.codes/event/2025/quests/14) | [quest_14.rs](/src/bin/quest_14.rs) | |
+| 15. [Definitely not a maze](https://everybody.codes/event/2025/quests/15) |WIP | |
+| 16. [Harmonics of stone](https://everybody.codes/event/2025/quests/16) | [quest_16.rs](/src/bin/quest_16.rs) | |

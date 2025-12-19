@@ -45,7 +45,7 @@ src
 | Quest | Solution | Notes |
 | --- | --- | --- |
 | 1. [Whispers in the shell](https://everybody.codes/event/2025/quests/1) | [Solution](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_01/src/main.rs) | To be ported to this repo at some point. |
-| 2. [From complex to clarity](https://everybody.codes/event/2025/quests/2) | [quest_01.rs](https://github.com/DavidOteroN/EverybodyCodes2025/blob/master/quest_01/src/main.rs) | To be ported to this repo at some point. |
+| 2. [From complex to clarity](https://everybody.codes/event/2025/quests/2) | [quest_01.rs](./src/bin/quest_02.rs) | `Complex` type implemented in [complex.rs](./src/utils/complex.rs) |
 | 3. [The deepest fit](https://everybody.codes/event/2025/quests/3) | [quest_01.rs](/src/bin/quest_03.rs) | |
 | 4. [Teeth of the wind](https://everybody.codes/event/2025/quests/3) | [quest_03.rs](/src/bin/quest_03.rs) | |
 | 5. [Fishbone order](https://everybody.codes/event/2025/quests/4) | [quest_04.rs](/src/bin/quest_04.rs) | |

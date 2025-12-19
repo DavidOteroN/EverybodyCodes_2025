@@ -1,5 +1,5 @@
 ec::solution!(5);
-use ec::utils::Fishbone;
+use ec::utils::fishbone::Fishbone;
 use regex::Regex;
 
 fn parse_input(notes: &str) -> (u32, Vec<u32>) {

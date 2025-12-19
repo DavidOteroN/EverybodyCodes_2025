@@ -1,3 +1,2 @@
+pub mod complex;
 pub mod fishbone;
-
-pub use fishbone::Fishbone;

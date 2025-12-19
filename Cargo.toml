@@ -2,7 +2,7 @@
 name = "ec"
 version = "0.1.0"
 edition = "2024"
-authors = ["JarroVGIT"]
+authors = ["JarroVGIT", "DavidOteroN"]
 default-run = "ec"
 
 [lib]
@@ -21,3 +21,4 @@ block-padding = "0.3"
 regex = "1.12.2"
 
 # Additional dependencies
+
